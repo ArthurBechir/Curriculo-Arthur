@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Currículo - Arthur Henrique Luciano Bechir</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins",sans-serif;
+        }
+
+        :root{
+            --text-color: #2d2d2d;
+            --bd-color: #b2c9ee;
+            --bdt-color: #eaeaea;
+        }
+
+        ::-webkit-scrollbar{
+            background: var(--bdt-color);
+            width: 7px;
+        }
+
+        ::-webkit-scrollbar-thumb{
+            background: var(--bd-color);
+            border-radius: 6px;
+        }
+
+        body{
+            background-color: var(--bdt-color);
+        }
+
+        section{
+            padding: 20px 200px;
+        }
+
+        .perfil{
+            display: flex;
+            width: 100%;
+            height: 380px;
+        }
+
+        .foto-perfil{
+            background-image: url(img/7d86672d-66ed-4378-8432-1efa1541633c.jpg);
+            background-size: cover;
+            margin: 10px;
+            height: 22rem;
+            width: 30rem;
+            border-radius: 50%;
+            transition: all 0.4s;
+        }
+
+        .informacao-pessoal{
+            width: 100%;
+            height: 350px;
+            margin-top: 25px;
+            display: flex;
+            justify-content: end;
+        }
+
+        .infos-pessoais h1{
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        .infos-pessoais h3{
+            margin-top: 7px;
+        }
+
+        #h3_status{
+            font-size: 20px;
+            font-weight: 300;
+            margin-left: 58%;
+        }
+
+        #h3_endereco{
+            font-size: 20px;
+            font-weight: 300;
+            margin-left: 9%;
+        }
+
+        #h3_email{
+            font-size: 20px;
+            font-weight: 300;
+            margin-left: 48%;
+        }
+
+        #h3_cell{
+            font-size: 20px;
+            font-weight: 300;
+            margin-left: 63%;
+        }
+
+        .curriculo{
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
+
+        .curriculo h2{
+            padding-left: 10px;
+            background-color: var(--bd-color);
+            font-size: 35px;
+            font-weight: 400;
+        }
+
+        .curriculo h3{
+            padding-left: 10px;
+            margin-top: 20px;
+            font-size: 30px;
+            font-weight: 300;
+        }
+
+        .curriculo h4{
+            padding-left: 10px;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        #h4_mrg{
+            margin-bottom: 50px;
+        }
+
+        .share{
+            position: relative;
+            padding-left: 10px;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        }
+
+        .share p{
+            font-size: 17px;
+            color: var(--text-color);
+            margin-right: 25px;
+        }
+
+        .social i{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 45px;
+            width: 45px;
+            background: linear-gradient(130.08deg, #d6d6d6 0%, #3e75ce 100%);
+            box-shadow: 0px 20px 40px var(--bd-color);
+            border-radius: 50%;
+            color: var(--bdt-color);
+            font-size: 20px;
+            margin: 0 7px;
+            transition: all 0.6s ease-in-out;
+        }
+
+        .social i:hover{
+            transform: translateY(-10px);
+        }
+
+        @media screen and (min-width: 1100px) {
+
+            #h3_status{
+                font-size: 17px;
+                margin-left: 53%;
+            }
+            
+            #h3_endereco{
+                font-size: 16px;
+                margin-left: 4%;
+            }
+            
+            #h3_email{
+                font-size: 16px;
+                margin-left: 45%;
+            }
+            
+            #h3_cell{
+                font-size: 16px;
+            margin-left: 61%;
+            }
+
+            .curriculo h2{
+                font-size: 25px;
+            }
+
+            .curriculo h3{
+                font-size: 20px;
+            }
+
+            .curriculo h4{
+                font-size: 15px;
+            }
+            
+        }
+
+        @media screen and (max-width: 1075px) {
+            .perfil{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                height: 700px;
+            }
+
+            .foto-perfil{
+                width: 22rem;
+                margin: auto;
+                justify-content: center;
+                align-items: center;
+            }
+
+            
+            .informacao-pessoal{
+                text-align: center;
+                justify-content: center;
+            }
+            
+            #h3_status{
+                text-align: center;
+                margin-left: 0%;
+            }
+
+            #h3_endereco{
+                text-align: center;
+                margin-left: 0%;
+            }
+
+            #h3_email{
+                text-align: center;
+                margin-left: 0%;
+            }
+
+            #h3_cell{
+                text-align: center;
+                margin-left: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <div class="perfil">
+           <div class="foto-perfil">
+           </div>
+            <div class="informacao-pessoal">
+                <div class="infos-pessoais">
+                    <h1>Arthur Henrique Luciano Bechir</h1>
+                    <br>
+                    <h3 id="h3_status">Brasileiro, 19 anos, solteiro</h3>
+                    <h3 id="h3_endereco">Travessa Pinheiros, 112 - Vila Santa Rita - São Roque - SP</h3>
+                    <h3 id="h3_email">Email: arthurbechir@gmail.com</h3>
+                    <h3 id="h3_cell">Celular: (11) 97872-1140</h3>
+                    <h3 id="h3_cell">Telefone: (11) 4784-1218</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div align="center">
+        <hr width="80%">
+    </div>
+
+    <section>
+        <div class="body-curriculo">
+            <div class="curriculo">
+                <h2>Objetivo</h2>
+                <h3>Primeiro emprego na área de tecnologia</h3>
+            </div>
+            
+            <div class="curriculo">
+                <h2>Formação Escolar</h2>
+                <h3>Ensino Médio Completo - 2021</h3>
+                <h4 id="h4_mrg">Escola Cooperativa São Roque</h4>
+                
+                <h3>Ensino Superior - Ínicio 2022 - Término previsto 2024</h3>
+                <h4>Análise e desenvolvimento de sistemas</h4>
+                <h4>Facens</h4>
+            </div>
+            
+            <div class="curriculo">
+                <h2>Cursos</h2>
+
+                <h3>Marketing digital para programadores</h3>
+                <h4>Danki Code</h4>
+                
+                <h3>Web Design Express</h3>
+                <h4>Danki Code</h4>
+                
+                <h3>Design para Web</h3>
+                <h4>Danki Code</h4>
+                
+                <h3>Front-End completo</h3>
+                <h4>Danki Code</h4>
+                
+                <h3>Javascript</h3>
+                <h4>Danki Code</h4>
+                
+                <h3>Python</h3>
+                <h4>Danki Code</h4>
+                
+                <h3>Node JS completo</h3>
+                <h4>Udemy</h4>
+            </div>
+            
+            <div class="curriculo">
+                <h2>Conhecimento</h2>
+                <h3>Informática:</h3>
+                <h3>Pacote office, HTML, CSS, Javascript, Java, Python, React, Banco de dados (MySQL), Rede de computadores, Figma e Photoshop.</h3>
+            </div>
+            
+            <div class="curriculo">
+                <h2>Habilidades</h2>
+                <h3>Comunicação</h3>
+                
+                <h3>Produtividade</h3>
+
+                <h3>Comprometimento</h3>
+            
+                <h3>Criatividade</h3>
+            </div>
+            
+            <div class="share">
+                <p>Redes sociais:</p>
+        
+                <div class="social">
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
